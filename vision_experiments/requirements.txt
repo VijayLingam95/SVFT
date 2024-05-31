@@ -1,0 +1,24 @@
+tqdm
+evaluate
+torch
+torchvision
+datasets
+transformers
+scikit-learn
+accelerate
+evaluate
+einops
+numpy
+rouge_score
+wandb
+jsonlines
+fire
+fraction
+vllm==0.4.0.post1
+quanto
+bitsandbytes
+setuptools
+deepspeed
+sentencepiece
+peft@git+https://github.com/huggingface/peft.git
+torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-2.1.2+cu121.html
