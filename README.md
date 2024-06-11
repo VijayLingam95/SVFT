@@ -42,3 +42,16 @@ which is currently configured to run Gemma-2B with SVFT.
 ### Vision Experiments
 
 For the vision experiments, see the ReadMe file in the vision experiments folder
+
+## Citation
+```
+@misc{lingam2024svft,
+      title={SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors}, 
+      author={Vijay Lingam and Atula Tejaswi and Aditya Vavre and Aneesh Shetty and Gautham Krishna Gudur and Joydeep Ghosh and Alex Dimakis and Eunsol Choi and Aleksandar Bojchevski and Sujay Sanghavi},
+      year={2024},
+      eprint={2405.19597},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
+
