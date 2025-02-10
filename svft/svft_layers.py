@@ -196,6 +196,16 @@ class LinearWithSVFT(nn.Module):
 
         else:
             return self.svft_layer(x)
-        
+
     def merge_and_unload(self):
         return self.svft_layer.merge_and_unload()
+
+
+def freeze_model(model, exclude_list = None):
+    ''' Freeze all parameters of the model '''
+    if exclude_list is None:
+        exclude_list = []
+
+    for n, p in model.named_parameters():
+        if not any(e in n for e in exclude_list):
+            p.requires_grad = False

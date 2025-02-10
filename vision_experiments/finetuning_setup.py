@@ -185,7 +185,7 @@ def sampled_balanced_train_val(dataset, num_train_per_label=10, num_val_per_labe
 
 DATASET_NAME_TO_URL = {
     "cifar100": "cifar100",
-    "food101": "visual-layer/vl-food101",
+    "food101": "ethz/food101",
     "flowers102": "dpdl-benchmark/oxford_flowers102",
     "resisc45": "timm/resisc45",
 }
@@ -209,7 +209,7 @@ def get_dataset(dataset_name):
     elif dataset_name == "food101":
         dataset_url = DATASET_NAME_TO_URL[dataset_name]
         dataset = load_dataset(dataset_url, split="train")
-        dataset_test = load_dataset(dataset_url, split="test")
+        dataset_test = load_dataset(dataset_url, split="validation")
         dataset_train, dataset_val = sampled_balanced_train_val(dataset)
         return dataset_train, dataset_val, dataset_test
 
